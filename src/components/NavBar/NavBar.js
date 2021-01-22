@@ -1,7 +1,7 @@
 import react from 'react'
 import { NavLink } from 'react-router-dom'
 //import * as RB from 'react-bootstrap'
-import {Nav,NavBarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks ,Img} from './NavBarStyle'
+import {Nav,NavBarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks } from './NavBarStyle'
 
 import {FaBars} from 'react-icons/fa'
 
