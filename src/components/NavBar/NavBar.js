@@ -6,7 +6,6 @@ import {Nav,NavBarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks } from '
 import {FaBars} from 'react-icons/fa'
 
 
-
 const Navbar =(props)=>{ return ( 
 <>
   <Nav>
