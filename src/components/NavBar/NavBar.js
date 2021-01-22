@@ -1,25 +1,38 @@
 import react from 'react'
-import * as RB from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
+//import * as RB from 'react-bootstrap'
+import {Nav,NavBarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks ,Img} from './NavBarStyle'
 
-const Navbar =()=>{ return ( <div> 
-<RB.Navbar collapseOnSelect expand="lg" fixed="top" >
-  <RB.Navbar.Brand href="#home">Android Club </RB.Navbar.Brand>
-  <RB.Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <RB.Navbar.Collapse id="responsive-navbar-nav">
-    <RB.Nav className="mr-auto">
-      <RB.Nav.Link href="#">Events </RB.Nav.Link>
-      <RB.Nav.Link href="#">Team </RB.Nav.Link>
-    </RB.Nav>
-    <RB.Nav>
-      <RB.Nav.Link href="#">Contact</RB.Nav.Link>
-      <RB.Nav.Link eventKey={2} href="#">
-        Event REGISTER
-      </RB.Nav.Link>
-    </RB.Nav>
-  </RB.Navbar.Collapse>
-</RB.Navbar>
-  </div>
+import {FaBars} from 'react-icons/fa'
+
+
+
+const Navbar =(props)=>{ return ( 
+<>
+  <Nav>
+    <NavBarContainer>
+        <NavLogo to='/'>
+        
+          ANDROID CLUB
+           
+        </NavLogo>
+
+        <MobileIcon onClick={props.toggle}>
+          <FaBars/>
+        </MobileIcon>
+        <NavMenu>
+          <NavItem><NavLinks  to='about'>HOME</NavLinks> </NavItem>
+          <NavItem><NavLinks to='event'>EVENT'S</NavLinks></NavItem>
+          <NavItem><NavLinks to='team'>TEAM</NavLinks></NavItem>
+          <NavItem><NavLinks to='announcement'>ANNOUNCEMENT</NavLinks></NavItem>
+          <NavItem><NavLinks to='contact'>CONTACT</NavLinks></NavItem>
+        </NavMenu>
+    </NavBarContainer>
+  </Nav>
+</>
   );
 }
 
 export default Navbar;
+
+
