@@ -67,26 +67,31 @@ function CardComponent() {
 
 // Card layout
 const MainCard = (props) => (
-  <Card style={mainStyle}>
-    <Card.Header style={cardStyle}>{props.header}</Card.Header>
-    <Card.Img src={props.image} />
+  <div>
+    <Card style={mainStyle} class="shadow-lg p-3 mb-5 bg-white rounded">
+      <Card.Header style={cardStyle}>{props.header}</Card.Header>
+      <Card.Img src={props.image} />
 
-    <Card.Body style={bodyStyle}>
-      <Card.Title style={{ color: "#D8F3DC" }}>{props.cardTitle}</Card.Title>
-      <Card.Text>{props.cardText}</Card.Text>
-      <Button variant="success" href="https://www.android.com">
-        Success
-      </Button>
-    </Card.Body>
-
-    <Card.Footer style={cardStyle}>{props.cardFooter}</Card.Footer>
-  </Card>
+      <Card.Body style={bodyStyle}>
+        <Card.Title style={{ color: "#D8F3DC" }}>{props.cardTitle}</Card.Title>
+        <Card.Text>{props.cardText}</Card.Text>
+        <Button variant="success" href="https://www.android.com">
+          Success
+        </Button>
+      </Card.Body>
+      <Card.Footer style={cardStyle}>{props.cardFooter}</Card.Footer>
+    </Card>
+  </div>
 );
 
 // Styles
 const mainStyle = { width: "25vmax", textAlign: "center" };
 const cardStyle = { background: "#081C15", color: "#fff" };
 const bodyStyle = { background: "#333", color: "#00ff00" };
+const cardHover = {
+  ransform: "scale(1.05)",
+  boxShadow: "0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06)",
+};
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
