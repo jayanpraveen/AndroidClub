@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import SideBar from "./components/SlideBar/sideBar";
 import VideoBanner from "./components/Banner/Banner";
 import Cards from "./components/Cards/CardComponent";
+import Footer from "./components/Footer/FooterUI";
 
 class App extends Component {
   state = { isOpen: false };
@@ -20,6 +21,7 @@ class App extends Component {
           <Navbar toggle={this.toggle} />
           <VideoBanner />
           <Cards />
+          <Footer />
         </div>
       </Router>
     );
