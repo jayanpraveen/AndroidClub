@@ -85,7 +85,7 @@ const MainCard = (props) => (
 );
 
 // Styles
-const mainStyle = { width: "25vmax", textAlign: "center" };
+const mainStyle = { width: "30vmax", textAlign: "center" };
 const cardStyle = { background: "#081C15", color: "#fff" };
 const bodyStyle = { background: "#333", color: "#00ff00" };
 const cardHover = {
