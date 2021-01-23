@@ -68,7 +68,7 @@ function CardComponent() {
 // Card layout
 const MainCard = (props) => (
   <div>
-    <Card style={mainStyle} class="shadow-lg p-3 mb-5 bg-white rounded">
+    <Card style={mainStyle} className="shadow-lg p-3 mb-5 bg-white rounded">
       <Card.Header style={cardStyle}>{props.header}</Card.Header>
       <Card.Img src={props.image} />
 
