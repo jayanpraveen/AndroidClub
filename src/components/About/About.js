@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
-import {InfoContainer ,InfoWrapper,InfoRow,Column1,Column2,TextWrapper , TopLine,Heading ,Subtitle, ImgWrap,Img} from './AboutStyled';
+import {InfoContainer ,InfoWrapper,InfoRow,Column1,Column2,TextWrapper , TopLine,Heading ,Subtitle, ImgWrap,Img,EventSwrapper,Buttons} from './AboutStyled';
 import './Youtubes.css';
 import logoSmall from '../../Images/Image.svg';
 
-const About = ({lightBg,imgStart,topline,lightText,headline,darkText, description, img,alt}) => {
+const About = ({lightBg,imgStart,topline,lightText,headline,darkText, description, img,alt,eventSwapper,dates,venu,Linkdisc,eventLinks}) => {
     return (
        
       <>
@@ -19,9 +19,15 @@ const About = ({lightBg,imgStart,topline,lightText,headline,darkText, descriptio
                    <TextWrapper>
                        
                        <TopLine>{topline}</TopLine>
-                       <Heading ligthText={lightText}>{headline}</Heading>
+                       <Heading lightText={lightText}>{headline}</Heading>
                        <Subtitle darkText={darkText}>{ description}</Subtitle>
                         
+                      <EventSwrapper eventSwapper={eventSwapper}>
+                      <Subtitle darkText={darkText}>{dates }</Subtitle>                     
+                      <Subtitle darkText={darkText}>{venu}</Subtitle>
+                      <Subtitle darkText={darkText}><a href={eventLinks}  rel="noopener noreferrer" target='_blank'>{Linkdisc}</a></Subtitle>
+                      </EventSwrapper>
+
                    </TextWrapper>
 
                   </Column1>
@@ -29,7 +35,7 @@ const About = ({lightBg,imgStart,topline,lightText,headline,darkText, descriptio
                   
                   <ImgWrap>
                   <div className="Youtube">
-                  <ReactPlayer  url="https://youtu.be/A2r9FCbX9UA"  controls   loop={true} width = "450px"  height = "350px" />
+                  <ReactPlayer  url={img}  controls   loop={true} width = "450px"  height = "350px" />
                   </div>
                   <Img src = {logoSmall} alt={alt}/>
                   </ImgWrap>

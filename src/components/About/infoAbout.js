@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export    const AboutInfo={
 
@@ -9,10 +10,40 @@ export    const AboutInfo={
   headline :'BEGIN JOURNEY WITH ANDROID CLUB &LEARN EXPERIMENT CREATE',
   description :'Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google.',
   imgStart :true,
-  img : require("../../Images/Image.svg"),
+  img : "https://youtu.be/A2r9FCbX9UA",
   alt : 'IMAGE',
   dark :true,
   primary :true,
-  darkText :false
+  darkText :false,
+  eventSwapper :false,
+  dates :'',
+  venu :'',
+  Linkdisc :'',
+  eventLinks :'',
+
+
+}
+
+
+export    const Anncounment={
+
+  id:'announcement',
+  lightBg :true,
+  lightText :false,
+  topline :'announcement',
+  lightTextDesc :false,
+  headline :'Androduce ',
+  description :' Things always go better with android... why not understand a bit about it! 📱 ANDRODUCE 2020',
+  eventSwapper :true,
+  dates :'Mark the Date : 21/11/2020',
+  venu :'This Saturday at 5.00 PM.',
+  Linkdisc :'Registration link ',
+  eventLinks :'https://docs.google.com/forms/d/e/1FAIpQLScZhrDgbwZK2sqMcna411aGrG3w3nDk-YHo7fbh2FARYRzSfg/viewform',
+  imgStart :false,
+  img : 'https://youtu.be/NfgRZ-6xzwY',
+  alt : 'announcement',
+  dark :true,
+  primary :false,
+  darkText :true
 
 }

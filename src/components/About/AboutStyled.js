@@ -71,7 +71,7 @@ padding-right :10px;
 
 
 export const TopLine =styled.p`
-
+ text-transform :uppercase;
  color :#01bf71;
  font-size :16px;
  line-height :16px;
@@ -82,12 +82,12 @@ export const TopLine =styled.p`
 `;
 
 export const Heading =styled.h1`
-
+ text-transform :uppercase;
  margin-bottom :24px;
  font-size :40px;
  line-height :1.1;
  font-weight :600;
- color :${({lightText}) =>(lightText ? '#f7f8fa' :'010606')};
+ color :${({lightText}) =>(lightText ? '#f7f8fa' :'#010606')};
 
   @media screen and (max-width :480px)
   {
@@ -125,3 +125,12 @@ export const Img=styled.img`
       display:block;
   }
 `;
+
+export const EventSwrapper=styled.div`
+
+display :${({eventSwapper}) =>(eventSwapper ? true :false)};
+
+`;
+
+
+

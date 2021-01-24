@@ -5,7 +5,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 import SideBar from './components/SlideBar/sideBar';
 import Banner from './components/Banner/Banner'
 import About from './components/About/About';
-import {AboutInfo} from './components/About/infoAbout'
+import {AboutInfo,Anncounment} from './components/About/infoAbout'
 
 class App extends Component 
 { 
@@ -22,6 +22,7 @@ class App extends Component
       <Navbar toggle ={this.toggle}/>
       <Banner/>
        <About {...AboutInfo}/>
+       <About {...Anncounment}/>
     </div>
     </Router>
   );
