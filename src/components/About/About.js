@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
-import {InfoContainer ,InfoWrapper,InfoRow,Column1,Column2,TextWrapper , TopLine,Heading ,Subtitle, ImgWrap,Img,EventSwrapper,Buttons} from './AboutStyled';
+import {InfoContainer ,InfoWrapper,InfoRow,Column1,Column2,TextWrapper , TopLine,Heading ,Subtitle, ImgWrap,Img,EventSwrapper,} from './AboutStyled';
 import './Youtubes.css';
 import logoSmall from '../../Images/Image.svg';
 
-const About = ({lightBg,imgStart,topline,lightText,headline,darkText, description, img,alt,eventSwapper,dates,venu,Linkdisc,eventLinks}) => {
+const About = ({lightBg,imgStart,topline,lightText,headline,darkText, description, img,alt,eventSwapper,dates,venu,Linkdisc,eventLinks,headingcolor}) => {
     return (
        
       <>
@@ -18,7 +18,7 @@ const About = ({lightBg,imgStart,topline,lightText,headline,darkText, descriptio
 
                    <TextWrapper>
                        
-                       <TopLine>{topline}</TopLine>
+                       <TopLine headingcolor={headingcolor}>{topline}</TopLine>
                        <Heading lightText={lightText}>{headline}</Heading>
                        <Subtitle darkText={darkText}>{ description}</Subtitle>
                         
@@ -26,6 +26,7 @@ const About = ({lightBg,imgStart,topline,lightText,headline,darkText, descriptio
                       <Subtitle darkText={darkText}>{dates }</Subtitle>                     
                       <Subtitle darkText={darkText}>{venu}</Subtitle>
                       <Subtitle darkText={darkText}><a href={eventLinks}  rel="noopener noreferrer" target='_blank'>{Linkdisc}</a></Subtitle>
+                     
                       </EventSwrapper>
 
                    </TextWrapper>

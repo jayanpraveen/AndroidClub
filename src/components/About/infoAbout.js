@@ -20,8 +20,8 @@ export    const AboutInfo={
   venu :'',
   Linkdisc :'',
   eventLinks :'',
-
-
+  
+  headingcolor:true
 }
 
 
@@ -29,7 +29,7 @@ export    const Anncounment={
 
   id:'announcement',
   lightBg :true,
-  lightText :false,
+  lightText :true,
   topline :'announcement',
   lightTextDesc :false,
   headline :'Androduce ',
@@ -44,6 +44,6 @@ export    const Anncounment={
   alt : 'announcement',
   dark :true,
   primary :false,
-  darkText :true
-
+  darkText :false,
+  headingcolor:false
 }
