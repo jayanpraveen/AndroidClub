@@ -7,6 +7,8 @@ import Banner from './components/Banner/Banner'
 import About from './components/About/About';
 import {AboutInfo,Anncounment} from './components/About/infoAbout'
 
+import TeamMain from './components/Teams/TeamMain'
+
 class App extends Component 
 { 
   state ={ isOpen :false}
@@ -23,6 +25,7 @@ class App extends Component
       <Banner/>
        <About {...AboutInfo}/>
        <About {...Anncounment}/>
+       <TeamMain/>
     </div>
     </Router>
   );

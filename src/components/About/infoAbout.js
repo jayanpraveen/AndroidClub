@@ -41,7 +41,7 @@ export    const Anncounment={
   eventLinks :'https://docs.google.com/forms/d/e/1FAIpQLScZhrDgbwZK2sqMcna411aGrG3w3nDk-YHo7fbh2FARYRzSfg/viewform',
   imgStart :false,
   img : 'https://www.youtube.com/embed/NfgRZ-6xzwY?autoplay=1&loop=1&playlist=NfgRZ-6xzwY',
-  alt : 'announcement',
+  alt : 'announcements',
   dark :true,
   primary :false,
   darkText :false,

@@ -121,7 +121,7 @@ export const Img=styled.img`
  padding-right :0;
  display :none;
  height: 100%;
- @media screen and (max-width :480px)
+ @media screen and (max-width :500px)
   {
       display:block;
   }

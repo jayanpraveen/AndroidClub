@@ -4,11 +4,11 @@ import {InfoContainer ,InfoWrapper,InfoRow,Column1,Column2,TextWrapper , TopLine
 import './Youtubes.css';
 import logoSmall from '../../Images/Image.svg';
 
-const About = ({lightBg,imgStart,topline,lightText,headline,darkText, description, img,alt,eventSwapper,dates,venu,Linkdisc,eventLinks,headingcolor}) => {
+const About = ({id,lightBg,imgStart,topline,lightText,headline,darkText, description, img,alt,eventSwapper,dates,venu,Linkdisc,eventLinks,headingcolor}) => {
     return (
        
       <>
-        <InfoContainer lightBg={lightBg}>
+        <InfoContainer lightBg={lightBg} id={id}>
 
           <InfoWrapper>
 
