@@ -19,12 +19,12 @@ class App extends Component
   return (
     <Router>
        <ScrollToTop/>
-    <div className="App">
+  
       <Switch>
         <Route path='/' component={HomePage} exact/>
         <Route path='/Team' component={TeamMain} exact/>
        </Switch> 
-    </div>
+  
     </Router>
   );
   }
