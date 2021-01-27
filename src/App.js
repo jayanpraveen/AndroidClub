@@ -10,7 +10,7 @@ import {AboutInfo,Anncounment} from './components/About/infoAbout' */
 import TeamMain from './components/Teams/TeamMain'
 import HomePage from './RouterPages/HomePage';
 
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollDeploy/ScrollToTop'
 
 class App extends Component 
 {  
