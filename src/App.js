@@ -21,7 +21,7 @@ class App extends Component
        <ScrollToTop/>
   
       <Switch>
-        <Route path='/' component={HomePage} exact/>
+        <Route path='/AndroidClub' component={HomePage} exact/>
         <Route path='/Team' component={TeamMain} exact/>
        </Switch> 
   

@@ -35,7 +35,7 @@ class TeamMain extends Component
            </DisplayList>
            
            <DisplayList>
-           <ButtonRouterLink gotoPage={"/"} textdes={"Home"}/>
+           <ButtonRouterLink gotoPage={"/AndroidClub"} textdes={"Home"}/>
            </DisplayList>
            </> 
            
