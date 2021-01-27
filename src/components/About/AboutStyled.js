@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom';
+
 
 export const InfoContainer =styled.div`
 
@@ -134,4 +136,37 @@ display :${({eventSwapper}) =>(eventSwapper ? true :false)};
 `;
 
 
+export const LinkWrapper =styled.div`
 
+border-radius :50px;
+padding :5px;
+background :#01bf71;
+display: inline-block;
+white-space :nowrap;
+color  :#010606;
+font-size :16px;
+outline :none;
+border :none;
+cursor: pointer;
+transition :all 0.2s ease-in-out;
+text-decoration :none;
+text-transform :uppercase;
+&:hover{
+
+    transition :all 0.2s ease-in-out;
+    background :#fff;
+    color :#010606;
+}
+
+
+`;
+
+
+export const ExternalLink =styled(Link)`
+text-decoration :none;
+font-size :16px;
+font-weight :500;
+padding :20px;
+color :black;
+
+`;

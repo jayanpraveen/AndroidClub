@@ -1,11 +1,21 @@
  import {DisplayList,DisplayH1,Teamgrid} from './TeamMainStyled'
   import Teams from './Teams'
- import React from 'react'
-import styled from 'styled-components'
- 
- const TeamMain = () => {
+
+import Navbar from '../NavBar/NavBar'
+import  ButtonRouterLink from '../ReactRouterBtn/ButtonRouterLink'
+
+import React ,{Component} from 'react';
+
+
+class TeamMain extends Component 
+{    
+    
+
+     render(){
      return (
-         <>
+         <>  
+         
+        
          <DisplayList id='team'>
            
            <DisplayH1> CORE TEAM 2020-2021 </DisplayH1>
@@ -23,9 +33,17 @@ import styled from 'styled-components'
            <Teams/>
            </Teamgrid>
            </DisplayList>
-           </>  
+           
+           <DisplayList>
+           <ButtonRouterLink gotoPage={"/"} textdes={"Home"}/>
+           </DisplayList>
+           </> 
+           
+    
       
      )
+
+     }
  }
  
  export default TeamMain;

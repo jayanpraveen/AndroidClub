@@ -18,8 +18,8 @@ export    const AboutInfo={
   eventSwapper :false,
   dates :'',
   venu :'',
-  Linkdisc :'',
-  eventLinks :'',
+  Linkdisc :'Join Discord',
+  eventLinks :'https://discord.gg/X4wHTzk',
   
   headingcolor:true
 }

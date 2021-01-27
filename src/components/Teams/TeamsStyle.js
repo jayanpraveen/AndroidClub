@@ -8,6 +8,14 @@ export const Team =styled.div`
  overflow: hidden;
  
   background :white;
+
+  &:hover{
+     
+     cursor: default;
+     transform: rotateY(360deg);
+     transition: all 2s ease-in-out 0.5s;
+ 
+      }
 `;
 
 
@@ -30,7 +38,16 @@ export const ProfileImage =styled.img`
    width: 8rem;
    clip-path: circle(60px at center);
    margin-top: 4.5rem;
-   
+
+   &:hover{
+     
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.7s ease-in-out 0.5s;
+
+     }
+
+
 `;
 
 export const PersonName =styled.h1`
@@ -58,6 +75,13 @@ export const FollowBtn =styled.button`
   color: white;
   background-color: #01bf71;
   padding: 1rem;
+
+  &:hover{
+
+transition :all 0.2s ease-in-out;
+background :#fff;
+color :#010606;
+}
 `;
 
 
