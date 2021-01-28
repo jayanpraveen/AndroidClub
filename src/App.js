@@ -7,7 +7,7 @@ import Banner from './components/Banner/Banner'
 import About from './components/About/About';
 import {AboutInfo,Anncounment} from './components/About/infoAbout' */
 
-import TeamMain from './components/Teams/TeamMain'
+import TeamMain from './components/Teams/TeamMain.js'
 import HomePage from './RouterPages/HomePage';
 
 import ScrollToTop from './components/ScrollToTop'
@@ -20,10 +20,10 @@ class App extends Component
     <Router>
     <ScrollToTop/>
  <div className="App">
-   <Switch>
-     <Route path='/AndroidClub' component={HomePage} exact/>
-     <Route path='/Team' component={TeamMain} exact />
-    </Switch> 
+ <Switch>
+        <Route path='/AndroidClub' component={HomePage} exact/>
+        <Route path='/Team' component={TeamMain} />
+       </Switch> 
  </div>
  </Router>
   );
@@ -37,9 +37,6 @@ export default App;
 
 /**
  * 
- *  <Switch>
-        <Route path='/' component={HomePage} exact/>
-        <Route path='/Team' component={TeamMain} />
-       </Switch> 
+ * 
  * 
  */

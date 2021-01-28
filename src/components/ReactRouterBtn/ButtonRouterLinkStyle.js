@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BrowserRouter, Route, Link as LinkR } from "react-router-dom";
+import {  Link as LinkR } from "react-router-dom";
 
 export const ButtonLink=styled(LinkR)`
 
