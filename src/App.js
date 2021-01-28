@@ -10,7 +10,7 @@ import {AboutInfo,Anncounment} from './components/About/infoAbout' */
 import TeamMain from './components/Teams/TeamMain'
 import HomePage from './RouterPages/HomePage';
 
-import ScrollToTop from './components/ScrollDeploy/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop'
 
 class App extends Component 
 {  
@@ -18,14 +18,14 @@ class App extends Component
   render(){
   return (
     <Router>
-       <ScrollToTop/>
-  
-      <Switch>
-        <Route path='/AndroidClub' component={HomePage} exact/>
-        <Route path='/Team' component={TeamMain} exact/>
-       </Switch> 
-  
-    </Router>
+    <ScrollToTop/>
+ <div className="App">
+   <Switch>
+     <Route path='/AndroidClub' component={HomePage} exact/>
+     <Route path='/Team' component={TeamMain} exact />
+    </Switch> 
+ </div>
+ </Router>
   );
   }
 }
@@ -34,3 +34,12 @@ export default App;
 
 // <HomePage/>
 //<TeamMain/>
+
+/**
+ * 
+ *  <Switch>
+        <Route path='/' component={HomePage} exact/>
+        <Route path='/Team' component={TeamMain} />
+       </Switch> 
+ * 
+ */
