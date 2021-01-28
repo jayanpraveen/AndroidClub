@@ -14,8 +14,11 @@ export const Team =styled.div`
      cursor: default;
      transform: rotateY(360deg);
      transition: all 2s ease-in-out 0.5s;
- 
+     
+     filter: blur(1px);
       }
+
+     
 `;
 
 

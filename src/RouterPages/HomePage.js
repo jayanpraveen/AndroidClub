@@ -11,6 +11,7 @@ import {AboutInfo,Anncounment} from '../components/About/infoAbout'
 import {DisplayList,DisplayH1} from '../components/Teams/TeamMainStyled'
 
 import   ButtonRouterLink from "../components/ReactRouterBtn/ButtonRouterLink";
+import TeamCoursels from '../components/TeamCoursel/TeamCoursels';
 
 class HomePage extends Component 
  {  
@@ -33,6 +34,7 @@ class HomePage extends Component
            
            <DisplayH1> CORE TEAM 2020-2021 </DisplayH1>
            </DisplayList>
+          <TeamCoursels/>
      <DisplayList>
             <ButtonRouterLink gotoPage={'/Team'} textdes={ "VIEW" }/>
       </DisplayList>

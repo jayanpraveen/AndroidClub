@@ -21,7 +21,7 @@ class TeamMain extends Component
       <DisplayH1> CORE TEAM 2020-2021 </DisplayH1>
       </DisplayList>
       <DisplayList >
-      <Teamgrid>
+      <Teamgrid  >
       <Teams/>
       <Teams/>
       <Teams/>
