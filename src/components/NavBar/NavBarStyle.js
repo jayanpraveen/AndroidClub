@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { BrowserRouter, Route, Link as LinkR } from "react-router-dom";
+import { Link as LinkR } from "react-router-dom";
 import {Link as LinkS} from 'react-scroll'
 
 /* margin-top: -80px; */

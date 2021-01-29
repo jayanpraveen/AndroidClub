@@ -12,6 +12,7 @@ import {DisplayList,DisplayH1} from '../components/Teams/TeamMainStyled'
 
 import   ButtonRouterLink from "../components/ReactRouterBtn/ButtonRouterLink";
 import TeamCoursels from '../components/TeamCoursel/TeamCoursels';
+import Footers from '../components/Footer/Footers';
 
 class HomePage extends Component 
  {  
@@ -39,6 +40,7 @@ class HomePage extends Component
             <ButtonRouterLink gotoPage={'/Team'} textdes={ "VIEW" }/>
       </DisplayList>
       
+         <Footers/>
         </>
     )
  }
