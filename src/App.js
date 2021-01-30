@@ -12,6 +12,7 @@ import HomePage from './RouterPages/HomePage';
 
 import ScrollToTop from './components/ScrollToTop'
 
+
 class App extends Component 
 {  
   
@@ -23,6 +24,7 @@ class App extends Component
  <Switch>
         <Route path='/AndroidClub' component={HomePage} exact/>
         <Route path='/Team' component={TeamMain} />
+      
        </Switch> 
  </div>
  </Router>
