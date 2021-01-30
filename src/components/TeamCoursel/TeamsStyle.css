@@ -50,3 +50,69 @@
     opacity: 0;
     transition-duration: 1s ease;
 }
+
+@media screen and (max-width :968px)
+{
+    .image{
+        width: 75%;
+        margin: auto;
+        align-self: center;
+        display: block;
+    }
+    .lefts{
+        
+        left: 18px;
+       
+    }
+    
+    
+    .rights{
+        
+        right : 18px;
+       
+    }
+}
+
+@media screen and (max-width :530px)
+{
+    .image{
+        width: 65%;
+        margin: auto;
+        align-self: center;
+        display: block;
+    }
+    .lefts{
+        
+        left: 15px;
+       
+    }
+    
+    
+    .rights{
+        
+        right : 15px;
+       
+    }
+}
+
+@media screen and (max-width :350px)
+{
+    .image{
+        width: 50%;
+        margin: auto;
+        align-self: center;
+        display: block;
+    }
+    .lefts{
+        
+        left: 15px;
+       
+    }
+    
+    
+    .rights{
+        
+        right : 15px;
+       
+    }
+}
