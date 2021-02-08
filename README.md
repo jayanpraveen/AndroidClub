@@ -1,8 +1,4 @@
-# Git PAGE LINK -https://engineerscodes.github.io/AndroidClub
-
-# Alternative LINK -https://engineerscodes.github.io/Roundhead/ (BackUp )
-
-
+###  [here](https://engineerscodes.github.io/AndroidClub)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
